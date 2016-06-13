@@ -1,30 +1,20 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 关于
+keywords: JPZ
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
 
-仰慕「优雅编码的艺术」。
-
-## 坚信
-
-* 熟能生巧
-* 努力改变人生
+* 技术改变世界
 
 ## 联系
 
 * GitHub：[@JPZJPZ](https://github.com/jpzjpz)
-* LinkedIn：[@mazhuang](https://www.linkedin.com/in/mazhuang)
-#* 博客：[{{ site.title }}]({{ site.url }})
-#* 微博: [@mzlogin](http://weibo.com/mzlogin)
-#* 知乎: [@mzlogin](http://www.zhihu.com/people/mzlogin)
-#* 豆瓣: [@壮哥不胖](http://www.douban.com/people/freedim)
+* Mail: &nbsp zhangjp1991@gmail.com
 
 ## Skill Keywords
 
