@@ -37,10 +37,10 @@
     {% when 'duoshuo' %}
       {% if site.duoshuo_username %}
       <!-- Duoshuo Comment BEGIN -->
-      <!-- ¶àËµÆÀÂÛ¿ò BEGIN -->
+      <!-- å¤šè¯´è¯„è®ºæ¡?BEGIN -->
       <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
-      <!-- ¶àËµÆÀÂÛ¿ò END -->
-      <!-- ¶àËµ¹«¹²JS´úÂë BEGIN (Ò»¸öÍøÒ³Ö»Ðè²åÈëÒ»´Î) -->
+      <!-- å¤šè¯´è¯„è®ºæ¡?END -->
+      <!-- å¤šè¯´å…¬å…±JSä»£ç  BEGIN (ä¸€ä¸ªç½‘é¡µåªéœ€æ’å…¥ä¸€æ¬? -->
       <script type="text/javascript">
       var duoshuoQuery = {short_name:"lvxing002"};
         (function() {
@@ -52,7 +52,7 @@
            || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
         </script>
-      <!-- ¶àËµ¹«¹²JS´úÂë END -->
+      <!-- å¤šè¯´å…¬å…±JSä»£ç  END -->
       <!-- Duoshuo Comment END -->
       {% endif %}
     {% when 'changyan' %}
@@ -72,4 +72,3 @@
       <!-- Changyan Comment END -->
   {% endcase %}
 {% endif %}
-#-#
