@@ -1,77 +1,67 @@
-# Lagom
+码志
+=================
 
-> #### *Lagom* is a Swedish word with no direct English equivalent, meaning "just the right amount"
+我的个人博客：<http://mazhuang.org>，外观基于 [DONGChuan](http://dongchuan.github.io) 修改，感谢！
 
-Lagom, a [Jekyll][j] blog theme with just the right amount of style. 
+欢迎 Star 和 Fork。
 
-Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
+### Fork 指南
 
+Fork 本项目之后，还需要做一些事情才能让你的页面「正确」跑起来。
 
+1. 正确设置项目名称与分支。
 
-* Responsive, based on [Skeleton][skeleton]
-* [Font Awesome][font-awesome] for icons
-* Open Sans from [Google web fonts][gfonts]
-* Built-in Atom feed
+   按照 GitHub Pages 的规定，名称为 `username.github.io` 的项目的 master 分支，或者其它名称的项目的 gh-pages 分支可以自动生成 GitHub Pages 页面。
 
-[![Live Demo](https://img.shields.io/badge/view-live--demo-blue.svg?style=flat-square)](http://lagom.mdswanson.com/)
+2. 修改域名。
 
-## Action Shots
-![](http://i.imgur.com/Pmzk4j1.png)
-![](http://i.imgur.com/CT2Xvug.png)
-![](http://i.imgur.com/XisjqW1.jpg)
+   如果你需要绑定自己的域名，那么修改 CNAME 文件的内容；如果不需要绑定自己的域名，那么删掉 CNAME 文件。
 
-## Installation
+3. 修改配置。
 
-- [Fork this repository][fork]
-- Clone it: `git clone https://github.com/YOUR-USER/lagom`
-- Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
-- Run the jekyll server: `jekyll serve`
+   网站的配置基本都集中在 \_config.yml 文件中，将其中与个人信息相关的部分替换成你自己的，比如网站的 title、subtitle、duoshuo 和 Disqus 的用户名等。
 
-You should have a server up and running locally at <http://localhost:4000>.
+   **注意：** 因为 Disqus 处理用户名与域名白名单的策略存在缺陷，请一定将 disqus\_username 修改成你自己的。我对该缺陷的记录见 [Issues#2][4]。
 
-## Customization
+4. 删除我的文章。
 
-Next you'll want to change a few things. Most of them can be changed directly in
-[theme.yml][config]. That's where you can add your social links, change the accent
-color, stuff like that.
+   如下文件夹中除了 template.md 文件外，都可以全部删除，然后添加你自己的内容。
 
-There's a few other places that you'll want to change, too:
+   * \_posts 文件夹中是我已发布的博客文章。
+   * \_drafts 文件夹中是我尚未发布的博客文章。
+   * \_wiki 文件夹中是我已发布的 wiki 页面。
 
-- [CNAME][cname]: If you're using this on GitHub Pages with a custom domain name, 
-  you'll want to change this to be the domain you're going to use. All that should 
-  be in here is a domain name on the first line and nothing else (like: `example.com`).
-- [favicon.png][favicon]: This is the icon in your browser's address bar. You should 
-  change it to whatever you'd like.
-- [logo.png][logo]: A square-ish image that appears in the upper-left corner
+5. 修改「关于」页面。
 
-## Deployment
+   pages/about.md 文件内容对应网站的「关于」页面，里面的内容多为个人相关，将它们替换成你自己的信息。
 
-You should deploy with [GitHub Pages][pages] - it's just easier.
+### 书写原则
 
-All you should have to do is rename your repository on GitHub to be
-`username.github.io`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.io>.
+1. 简约，尽量每个页面都不展示多余的内容。
 
-## Licensing
+2. 有时一图抵千言，有时可能只会拖慢网页加载速度。
 
-[MIT](https://github.com/swanson/lagom/blob/master/LICENSE) with no
-added caveats, so feel free to use this on your site without linking back to
-me or using a disclaimer or anything silly like that.
+3. 言之有物，不做无痛之呻吟。
 
-## Contact
-I'd love to hear from you at [@_swanson][twitter]. Feel free to open issues if you
-run into trouble or have suggestions. Pull Requests always welcome.
+### 书写提示
 
-[j]: http://jekyllrb.com/
-[mds]: http://mdswanson.com
-[skeleton]: http://www.getskeleton.com/
-[font-awesome]: http://fortawesome.github.io/Font-Awesome/
-[gfonts]: http://www.google.com/fonts/specimen/Open+Sans
-[fork]: https://github.com/swanson/lagom/fork
-[config]: https://github.com/swanson/lagom/blob/master/_data/theme.yml
-[cname]: https://github.com/swanson/lagom/blob/master/CNAME
-[favicon]: https://github.com/swanson/lagom/blob/master/favicon.png
-[logo]: https://github.com/swanson/lagom/blob/master/logo.png
-[pages]: http://pages.github.com
-[twitter]: https://twitter.com/_swanson
-[pages]: https://github.com/github/pages-gem
+1. 在 Github Flavored Markdown 书写与 Redcarpt 有些许差异，可以参考 [GFM 与 Redcarpet 的不同点][2]。
+
+2. 中英文之间要加空格，更多中文文案排版规范可以参考 [中文文案排版指北（简体中文版）][1]。
+
+3. 在本地预览博客效果可以参考 [Setting up your Pages site locally with Jekyll][3]。
+
+### 书写经验
+
+* 如果写技术文章，那先将技术原理完全理清了再开始写，一边摸索技术一边组织文章效率较低。
+
+* 杜绝难断句、难理解的长句子，如果不能将其拆分成几个简洁的短句，说明脑中的理解并不清晰。
+
+### 书写思考
+
+* 那些高质量的博主，他们的行文，内容组织方式，有什么值得学习借鉴的地方？
+
+[1]: https://github.com/mzlogin/chinese-copywriting-guidelines
+[2]: http://mazhuang.org/2015/12/05/diff-between-gfm-and-redcarpet/
+[3]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
+[4]: https://github.com/mzlogin/mzlogin.github.io/issues/2
