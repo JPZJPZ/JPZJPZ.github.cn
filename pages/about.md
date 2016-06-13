@@ -19,12 +19,12 @@ permalink: /about/
 
 ## 联系
 
-* GitHub：[@mzlogin](https://github.com/mzlogin)
+* GitHub：[@JPZJPZ](https://github.com/jpzjpz)
 * LinkedIn：[@mazhuang](https://www.linkedin.com/in/mazhuang)
-* 博客：[{{ site.title }}]({{ site.url }})
-* 微博: [@mzlogin](http://weibo.com/mzlogin)
-* 知乎: [@mzlogin](http://www.zhihu.com/people/mzlogin)
-* 豆瓣: [@壮哥不胖](http://www.douban.com/people/freedim)
+#* 博客：[{{ site.title }}]({{ site.url }})
+#* 微博: [@mzlogin](http://weibo.com/mzlogin)
+#* 知乎: [@mzlogin](http://www.zhihu.com/people/mzlogin)
+#* 豆瓣: [@壮哥不胖](http://www.douban.com/people/freedim)
 
 ## Skill Keywords
 
