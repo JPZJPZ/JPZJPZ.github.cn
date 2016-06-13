@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: JPZ
 subtitle: "路漫漫其修远兮，吾将上下而求索"
 description: "JPZ的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+keywords: JPZ
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -18,7 +18,7 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: JP Zhang
-organization: personal developer.
+organization: personal.
 organization_url: 
 location: HangZhou, China
 email: zhangjp199103@gmail.com
