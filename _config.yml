@@ -4,10 +4,10 @@
 baseurl:
 url: http://jpzjpz.github.io/
 date_format: "ordinal"
-title: JPZ
+title: WuMei
 subtitle: "路漫漫其修远兮，吾将上下而求索"
-description: "JPZ的个人博客"
-keywords: JPZ
+description: "WuMei的个人博客"
+keywords: WuMei
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -18,7 +18,7 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: JP Zhang
-organization: personal.
+organization: 
 organization_url: 
 location: HangZhou, China
 email: zhangjp199103@gmail.com
