@@ -12,6 +12,6 @@ permalink: /links/
 
 * [Android中LruCache的使用](http://blog.csdn.net/guolin_blog/article/details/9316683)
 * [Android中DiskLruCache的使用](http://www.tuicool.com/articles/JB7RNj)
-* [Google](http://www.google.com)
+* [java泛型](http://blog.csdn.net/mtawaken/article/details/9813581)
 
 
