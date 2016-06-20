@@ -1,16 +1,13 @@
 ---
 layout: exercise
-title: 接口型模式
+title: 接口练习
 categories: JAVA设计模式
-description: 接口型模式
+description: 接口练习
 keywords: 接口
 ---
 
 
-# 接口型模式
-
-
-### 练习
+### 接口练习
 **1、写出在java中抽象类于接口的不同**
 
 答案：
