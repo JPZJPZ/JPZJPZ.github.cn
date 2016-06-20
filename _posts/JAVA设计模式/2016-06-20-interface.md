@@ -7,14 +7,14 @@ keywords: 接口
 ---
 
 
-#接口型模式
+# 接口型模式
 
 
-###练习
-[**1、写出在java中抽象类于接口的不同**](http://wumeiblog.com/exercise/interface)
+### 练习
+[**1、写出在java中抽象类于接口的不同**](http://wumeiblog.com/exercise/java设计模式/interface)
 
 
-[**2、下面哪些说法是正确的的？**
+[**2、下面哪些说法是正确的的？**](http://wumeiblog.com/exercise/java设计模式/interface)
 
 ```java
 public interface RocketSim {
@@ -29,7 +29,7 @@ public interface RocketSim {
 * D、可以创建另外一个接口，例如RocketSimSoild，去扩展RocketSim接口。
 * E、 每个接口必须包含一个方法。
 * F、接口可以声明实例字段，实现该接口的方法也必须声明该字段。
-* G、虽然不能实例化接口，但接口仍然可以定义构造函数，并要求实现类必须提供提供具有相同签名的构造函数。](http://wumeiblog.com/exercise/interface)
+* G、虽然不能实例化接口，但接口仍然可以定义构造函数，并要求实现类必须提供提供具有相同签名的构造函数。
 
 
 
