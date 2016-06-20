@@ -1,7 +1,7 @@
 ---
 layout: exercise
 title: 接口型模式
-categories: Java设计模式
+categories: JAVA设计模式
 description: 接口型模式
 keywords: 接口
 ---
@@ -48,7 +48,7 @@ public interface RocketSim {
 * D.正确。例如List和Set都继承自java.util接口Collection接口。
 * E.错误。没有方法的接口称为标记接口（maker interface）。有时候，一个方法处于类继承层次的高处，例如object.clone()，但它不适用于所有子类。如果希望子类在此样式下能够有选择的实现，就可以创建一个标记接口。通过声明对Clone标记接口的实现，就能够要求子类也实现Object的Clone()方法。
 * F.错误。接口虽然能够声明静态的final字段作为常量，但不能声明实例字段。
-* G.错误。虽然是够不错的注意，但Java接口却不能这样做，这会使得实现类必须提供一个特定的构造函数。
+* G.错误。虽然是个不错的注意，但Java接口却不能这样做，这会使得实现类必须提供一个特定的构造函数。
 
 
 
