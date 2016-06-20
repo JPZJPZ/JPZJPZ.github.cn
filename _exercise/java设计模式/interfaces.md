@@ -24,6 +24,8 @@ keywords: 接口
 **2、下面哪些说法是正确的的？**()
 
 ```java
+com.oozinoz.simulation
+
 public interface RocketSim {
 	abstract double getMass();
 	public double getThrust();
@@ -42,6 +44,7 @@ public interface RocketSim {
 
 * A.正确。接口方法总是抽象的，不管你是否对此声明。
 * B.正确。接口方法总是公开的，不管你是否对此声明。
+* C.错误。接口的所见性会被限制在它所在的包当中。对于本例，接口应该被标记为public，这样，com.oozinoz.simulation包外的类才能访问它。
 
 
 
