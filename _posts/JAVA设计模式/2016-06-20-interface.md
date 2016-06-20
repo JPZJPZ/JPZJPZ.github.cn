@@ -11,10 +11,10 @@ keywords: 接口
 
 
 ### 练习
-[**1、写出在java中抽象类于接口的不同**](http://wumeiblog.com/exercise/java设计模式/interface)
+[**1、写出在java中抽象类于接口的不同**](http://jpzjpz.github.io/exercise/java设计模式/interface)
 
 
-[**2、下面哪些说法是正确的的？**](http://wumeiblog.com/exercise/java设计模式/interface)
+[**2、下面哪些说法是正确的的？**](http://jpzjpz.github.io/exercise/java设计模式/interface)
 
 ```java
 public interface RocketSim {
