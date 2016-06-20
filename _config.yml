@@ -38,6 +38,10 @@ navs:
   -
     href: /links/
     label: 链接
+    
+  -
+    href: /exercise/
+    label: 练习
 
   -
     href: /about/
@@ -69,9 +73,9 @@ gems:
     - jemoji
 #     - jekyll-mentions
 collections:
-    wiki:
+    exercise:
         output: true
-        permalink: /wiki/:path/
+        permalink: /exercise/:path/
 
 # ---------------- #
 #      Socials     #
