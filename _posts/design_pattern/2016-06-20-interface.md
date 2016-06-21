@@ -1,19 +1,19 @@
 ---
 layout: post
-title: 适配器模式
+title: 接口练习
 categories: JAVA设计模式
-description: 适配器模式
-keywords: 适配器,Adapter
+description: 接口练习
+keywords: 接口
 ---
 
 
 ### 接口练习
 
 
-[**1、写出在java中抽象类于接口的不同**](http://jpzjpz.github.io/exercise/java设计模式/interface)
+[**1、写出在java中抽象类于接口的不同**](http://jpzjpz.github.io/exercise/design_pattern/interface)
 
 
-[**2、下面哪些说法是正确的的？**](http://jpzjpz.github.io/exercise/java设计模式/interface)
+[**2、下面哪些说法是正确的的？**](http://jpzjpz.github.io/exercise/design_pattern/interface)
 
 ```java
 public interface RocketSim {
