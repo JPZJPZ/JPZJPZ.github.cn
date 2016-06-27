@@ -5,7 +5,6 @@ categories: JAVA设计模式
 description: 单例模式
 keywords: singleton,单例
 ---
-http://blog.csdn.net/u010425776/article/details/48242337
 
 # 单例模式
 
