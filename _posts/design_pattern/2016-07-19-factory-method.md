@@ -39,7 +39,7 @@ public static void main(String[] args) {
 
 在这种情况下，需要把创建对象的工作转交给一个接口，来完成实例化的控制。一种解决方案是让这两个类同时实现一个标准接口，并创建一个工厂方法来返回该接口的某个实例。具体做法如下：
 
-	* 创建一个名为creditCheck的接口，使其包含creditLimit()方法。
+   * 创建一个名为creditCheck的接口，使其包含creditLimit()方法。
     
    * 使所有信贷核对类声明实现CreditCheck接口。
    
