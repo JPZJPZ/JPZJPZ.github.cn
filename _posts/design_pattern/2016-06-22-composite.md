@@ -85,16 +85,88 @@ public MechineComposite plant() {
 在对组合对象建模时，通常需要给组合节点引入递归定义。倘若存在递归定义，在编写代码时需要注意防止死循环。为避免这一问题，可以确保组合对象都是树形结构。此外，虽然允许环出现在合成模式中，但必须修改算法避免可能出现的死循环。
 
 
-
-
-
-
-
-
-
-
-
-
 摘自：java设计模式（第二版）（（美）梅茨克尔（Metsker，S.J.），（美）韦克（Wake，W.C.） 著）
 
 其他的参考文章  [http://www.cnblogs.com/java-my-life/archive/2012/04/17/2453861.html](http://www.cnblogs.com/java-my-life/archive/2012/04/17/2453861.html)
+
+## 代码
+
+合成模式可以使客户端将单纯元素与复合元素同等看待。如下面的例子，他们都有共同的方法，getPeopleNum()。
+
+首先定义一个接口，这是单对象和组合对象共有的方法：
+
+```java
+public interface DeptComponent {
+	public int getPeopleNum();
+}
+```
+
+单对象：
+
+```java
+public class Dept implements DeptComponent{
+	private int peopleNums;
+	public Dept(String name,int peopleNums){
+		this.peopleNums = peopleNums;
+	}
+	
+	@Override
+	public int getPeopleNum() {
+		return peopleNums;
+	}
+
+}
+```
+
+组合对象
+
+```java
+public class DeptComposite implements DeptComponent{
+	
+	private List<DeptComponent> depts;
+	
+	public DeptComposite(String name) {
+		depts = new ArrayList<DeptComponent>();
+	}
+	
+	public void addDept(DeptComponent dept) {
+		depts.add(dept);
+	}
+	
+	public void removeDept(int index) {
+		depts.remove(index);
+	}
+
+	@Override
+	public int getPeopleNum() {
+		int peopleNums = 0;
+		for(DeptComponent dept : depts) {
+			 peopleNums +=dept.getPeopleNum();
+		}
+		return peopleNums;
+	}
+
+}
+```
+
+一个公司类，可以通过方法获取公司的人数
+
+```java
+public class Company {
+	public static void main(String[] args) {
+		DeptComposite compony = new DeptComposite("公司");
+		DeptComposite deptDevelop = new DeptComposite("开发部");
+		Dept deptPersonal = new Dept("人事部",5);
+		Dept deptApp = new Dept("APP开发部",6);
+		Dept deptBack = new Dept("后台开发",10);
+		
+		compony.addDept(deptDevelop);
+		compony.addDept(deptPersonal);
+		deptDevelop.addDept(deptApp);
+		deptDevelop.addDept(deptBack);
+		
+		System.out.println(compony.getPeopleNum());
+		
+	}
+}
+```
