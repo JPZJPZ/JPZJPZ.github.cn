@@ -32,7 +32,7 @@ keywords: responsibility,职责链
 
 * 并非所有对象都需要提供这些新方法所表示的行为。（例如，最顶端的元素就没有父对象。）
 
-* 当前设计局限于细节，关心系统如何知道是哪些工程师正在工厂，并是否可用。改设计并不清楚完成责任需要的”实际时间“。
+* 当前设计局限于细节，关心系统如何知道是哪些工程师正在工厂，并是否可用。该设计并不清楚完成责任需要的”实际时间“。
 
 ## 重构为职责链模式
 
@@ -127,7 +127,7 @@ public Engineer getResponsible() {
 
 ![](/images/posts/design_pattern/chain-of-responsibilty_4.png)
 
-通过固定职责链，我们的对象模型变得更加健壮，大妈也更为简洁。现在可以实现MachineComponent类的getResponsible()方法了。
+通过固定职责链，我们的对象模型变得更加健壮，代码也更为简洁。现在可以实现MachineComponent类的getResponsible()方法了。
 
 ```java
 public Engineer getResponsible() {
@@ -153,3 +153,97 @@ public Engineer getResponsible() {
 
 摘自：java设计模式（第二版）（（美）梅茨克尔（Metsker，S.J.），（美）韦克（Wake，W.C.） 著）
 
+## 代码
+
+下面是一个请假流程，不同的请假天数需要不同的人批准
+
+```java
+public interface OffWorkInterface {
+	//请假
+	public boolean leaveWork(int day);
+}
+```
+
+```java
+public class Boss implements OffWorkInterface{
+
+	@Override
+	public boolean leaveWork(int day) {
+		System.out.println("Boss：OK");
+		return true;
+	}
+
+}
+```
+
+```java
+public class HR implements OffWorkInterface{
+	
+	OffWorkInterface superior;//上级
+	
+	public HR(OffWorkInterface people) {
+		superior = people;
+	}
+
+	@Override
+	public boolean leaveWork(int day) {
+		if(day<=3) {
+			System.out.println("HR：OK");
+			return true;
+		}
+		return superior.leaveWork(day);
+	}
+	
+	/**
+	 * 设置上级
+	 * @param people
+	 */
+	public void setSuperior(OffWorkInterface people) {
+		superior = people;
+	}
+
+}
+```
+
+```java
+public class Manager implements OffWorkInterface{
+	
+	OffWorkInterface superior;//上级
+	
+	public Manager(OffWorkInterface people) {
+		superior = people;
+	}
+
+	@Override
+	public boolean leaveWork(int day) {
+		if(day<=1) {
+			System.out.println("Manager：OK");
+			return true;
+		}
+		return superior.leaveWork(day);
+	}
+	
+	/**
+	 * 设置上级
+	 * @param people
+	 */
+	public void setSuperior(OffWorkInterface people) {
+		superior = people;
+	}
+
+}
+```
+
+```java
+public class Main {
+	public static void main(String[] args) {
+		Boss boss = new Boss();
+		HR hr = new HR(boss);
+		Manager manager = new Manager(hr);
+		
+		manager.leaveWork(5);
+	}
+}
+```
+
+输出：Boss：OK
